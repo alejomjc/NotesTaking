@@ -56,3 +56,92 @@ The development of **NotesTaking** followed a structured and iterative approach 
   - Helped identify and fix potential issues in frontend state management.  
 
 The use of AI streamlined the development process, improved code efficiency, and ensured best practices were followed.
+
+---
+
+## How to Run the Project
+
+### Prerequisites
+Make sure you have installed:
+
+1. **Node.js** (Recommended: version 18 or later).
+2. **Python** (Recommended: version 3.8 or later).
+3. **SQLite** (included by default in Python, used as the database).
+4. **npm** and **pip** for package management (included with Node.js and Python respectively).
+
+---
+
+### 1. Setting Up and Running the Backend (Django)
+The backend uses **Django Rest Framework (DRF)** to handle the REST API.
+
+#### Instructions:
+1. Clone the project repository if you haven’t already:
+   ```bash
+   git clone https://github.com/alejomjc/NotesTaking
+   cd NotesTaking
+   ```
+
+2. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+
+3. Create and activate a Python virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate           # Linux/macOS
+   venv\Scripts\activate              # Windows
+   ```
+
+4. Install the project dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Apply database migrations:
+   ```bash
+   python manage.py migrate
+   ```
+
+6. (Optional) Create a superuser to access the Admin Panel:
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+7. Run the development server:
+   ```bash
+   python manage.py runserver
+   ```
+
+The server will be available at: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+---
+
+### 2. Setting Up and Running the Frontend (Next.js)
+The frontend uses **Next.js** together with **TailwindCSS** to create a modern, fast interface.
+
+#### Instructions:
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+
+2. Install the project dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+The server will be available at: [http://localhost:3000/](http://localhost:3000/)
+
+---
+
+### Verifying the Application  
+1. Access the **backend** at: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)  
+2. Access the **frontend** at: [http://localhost:3000/](http://localhost:3000/)  
+
+The application should now be ready to use! 🚀
